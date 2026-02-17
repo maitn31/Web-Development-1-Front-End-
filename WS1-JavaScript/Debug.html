@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Debugging Challenge</h1>
+    <script>
+        // This code is broken! Find and fix the errors.
+        let i = 5;
+        let j = 10;
+        let k = 25;
+        let l = "Joe"; // Fixed: Added quotes around "Joe" as it should be a string
+        const arr = [3, 5, 7];
+        if (i < j) {
+            console.log("i is less than j");
+        } else if (j > k) {
+            console.log("j is greater than k");
+        } else {
+            console.log("j"); // Fixed: Added missing closing quote
+            //I don't really understand this one. It should be console.log(j) to show the number j = 10.
+            //The original code would only show the letter "j"
+        }
+        for (let i = 0; i < arr.length; i++) { // Fixed: Changed 3 to arr.length to avoid index error
+            console.log(arr[i]);
+        }
+        //Basically the code has no syntax erorr. 
+        //But the logic is so confused and you didn't mention how the logic should be so I don't really know what to fix
+    </script>
+</body>
+</html>
