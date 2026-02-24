@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 5</title>
+</head>
+<body>
+  <h2>Exercise 5: Random Image</h2>
+  <img id="randomImg" alt="Random" width="350" />
+
+  <script>
+    const images = [
+      "https://picsum.photos/seed/a/600/400",
+      "https://picsum.photos/seed/b/600/400",
+      "https://picsum.photos/seed/c/600/400"
+    ];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    document.getElementById("randomImg").src = images[randomIndex];
+  </script>
+</body>
+</html>

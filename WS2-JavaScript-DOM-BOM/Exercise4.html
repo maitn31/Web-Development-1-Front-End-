@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 4</title>
+</head>
+<body>
+  <h2>Exercise 4</h2>
+  <p id="result"></p>
+  <script>
+    const answer = confirm("Are you a student?");
+    //By using confirm(), the option buttons are Ok/Cancel by default and cant be change.
+    //Should use EventListener or similar to get a dialouge with Yes/No buttons.
+    if (answer == true){
+        result = "You are a student"
+    }else{
+        result = "You are not a student"
+    }
+    document.getElementById("result").innerHTML = result;
+  </script>
+</body>
+</html>
