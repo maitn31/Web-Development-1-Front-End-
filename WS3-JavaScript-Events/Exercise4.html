@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Common Events List</title>
+</head>
+<body onload="alert('Page loaded!')"> <!-- onload on body -->
+
+  <h1>Common Events</h1>
+
+  <button onclick="alert('Button clicked!')">Click Me</button> <!-- onclick -->
+
+  <p>
+    <select onchange="alert('Selection changed!')"> <!-- onchange on select -->
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </p>
+
+  <p>
+    <img src="image.jpg"
+         onmouseover="this.src='hover.jpg'"
+         onmouseout="this.src='image.jpg'"
+         alt="Hover Image" width="300"> <!-- onmouseover/out on img -->
+  </p>
+
+  <p>
+    <input type="text" onkeydown="alert('Key down!')" placeholder="Type here"> <!-- onkeydown -->
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Dynamic Listeners</title>
+</head>
+<body>
+  <h1 id="myH1">Click me!</h1>
+
+  <button onclick="removeListener()">Remove Listener</button>
+
+  <script>
+    // Obtain element reference
+    let element = document.getElementsByTagName("h1")[0];
+
+    // Define function for listener
+    function sayHello() {
+      alert("Hello World!");
+    }
+
+    // Add listener
+    element.addEventListener("click", sayHello);
+
+    // Function to remove (must use same function reference)
+    function removeListener() {
+      element.removeEventListener("click", sayHello);
+      console.log("Listener removed!");
+    }
+  </script>
+</body>
+</html>

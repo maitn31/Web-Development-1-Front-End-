@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Named Functions for Events</title>
+</head>
+<body>
+  <h1>Named Function Demonstration</h1>
+  <p>What is the name(s) of your browser?</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo"></p> <!-- Output area -->
+
+  <script>
+    function myFunction() {
+      // Obtain browser information using navigator (BOM)
+      document.write("Name is: " + navigator.appName); <!-- Writes to page -->
+      document.write("<br>Code name is: " + navigator.appCodeName);
+    }
+    //navigator.userAgent will result the browser name. Name is:"..." can be confused
+  </script>
+</body>
+</html>
